@@ -27,17 +27,23 @@ no GitBash: $ git clone "_+ https da pasta que gostaria de clonar_"
 (Ubuntu)no terminal: $ rm -rf _+ nome do repositorio +/_
 
 #####  - **Verificar status de conteudos gerenciados**
-no GitBash: $ git status
+(win)no GitBash: $ git status
+(Ubuntu)no terminal: $ git status
 (obs.: selecionar o diretorio/repositorio desejado para verificacao)
 
 #####  - **Mover arquivos alterados/modificados/atualizados para staged**
-no GitBash: $ git add . "ou" $ git add -A
+(win)no GitBash: $ git add . "ou" $ git add -A
+(Ubuntu)no terminal: $ git add . "ou" $ git add -A
 (obs.: inclui arquivos no controle de versao local somente)
 
 ##### - **Cria SnapShot(imagem/versao) a ser controlada com o hash do SHA1 no ambiente local**
-no GitBash: $ git commit -m "(_Inserir comentario sobre versao_)"
+(win)no GitBash: $ git commit -m "(_Inserir comentario sobre versao_)"
+(Ubuntu)no terminal: $ git commit -m "(_Inserir comentario sobre versao_)"
 
-##### - **Sincronizar ambiente local com servidor**
-no GitBash: $ git push origin main
+##### - **Sincronizar ambiente local com remoto**
+(win)no GitBash: $ git push origin main
+(Ubuntu)no terminal: $ git push origin main
 
-
+##### - **Sincronizar ambiente remoto com local**
+(win)no GitBash: $ git pull origin main
+(Ubuntu)no terminal: $ git pull origin main
