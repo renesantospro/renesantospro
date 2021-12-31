@@ -19,8 +19,12 @@ listar no diretorio local de criacao informado arquivos presentes
 (win)no GitBash: $ ssh-add _+ caminho para arquivo chave privada na maquina local_
 (Ubuntu)no terminal: $ ssh-add _+ caminho para arquivo chave privada na maquina local_
 
+##### - **Iniciar o Git**
+(Ubuntu)no terminal: $ git init
+(obs.: selecionar o diretorio/repositorio desejado)
+
 #####  - **Fazer um clone do servidor (GitHub) para ambiente de desenvolvimento (maq. local)** se for com ssh o link copiado deve ser o do ssh tb
-no GitBash: $ git clone "_+ https da pasta que gostaria de clonar_"
+no GitBash: $ git clone "_+ https ou ssh da pasta que gostaria de clonar_"
 
 ##### - **Remover repositorio**
 (win)via prompt: >rmdir _+ nome do repositorio_ /S /Q
@@ -39,6 +43,9 @@ no GitBash: $ git clone "_+ https da pasta que gostaria de clonar_"
 ##### - **Cria SnapShot(imagem/versao) a ser controlada com o hash do SHA1 no ambiente local**
 (win)no GitBash: $ git commit -m "(_Inserir comentario sobre versao_)"
 (Ubuntu)no terminal: $ git commit -m "(_Inserir comentario sobre versao_)"
+
+##### - **Cria origem no ambiente local para push**
+(Ubuntu)no terminal: $ git remote add origin https://github.com/renesantospro/machine_learn.git (exemplo de pasta)
 
 ##### - **Sincronizar ambiente local com remoto**
 (win)no GitBash: $ git push origin main
