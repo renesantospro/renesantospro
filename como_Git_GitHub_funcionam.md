@@ -23,12 +23,28 @@ listar no diretorio local de criacao informado arquivos presentes
 (Ubuntu)no terminal: $ git init
 (obs.: selecionar o diretorio/repositorio desejado)
 
-#####  - **Fazer um clone do servidor (GitHub) para ambiente de desenvolvimento (maq. local)** se for com ssh o link copiado deve ser o do ssh tb
-no GitBash: $ git clone "_+ https ou ssh da pasta que gostaria de clonar_"
+##### - **Iniciar um novo repositorio vazio Git** (nao aconselhado)
+(Ubuntu)no terminal: $ git init _+ nome do repositorio +/_
+(obs.: selecionar o diretorio/repositorio desejado)
+
+##### - **Cria origem no ambiente local para push** (nao aconselhado)
+(Ubuntu)no terminal: $ git remote add origin https://github.com/renesantospro/machine_learn.git (exemplo de pasta)
 
 ##### - **Remover repositorio**
 (win)via prompt: >rmdir _+ nome do repositorio_ /S /Q
 (Ubuntu)no terminal: $ rm -rf _+ nome do repositorio +/_
+
+##### - **Criacao de um novo repositorio**
+Para criar um novo repositorio tenha preferencia pela criacao via browser, logado no Git Hub, e depois clone o mesmo para o ambiente local, conforme instrucoes abaixo.
+
+#####  - **Fazer um clone do servidor (GitHub) para ambiente de desenvolvimento (maq. local)**
+obs.: se for com ssh o link copiado deve ser o do ssh tb
+no GitBash: $ git clone "_+ https ou ssh da pasta que gostaria de clonar_"
+
+(opcao ajuda fornecida pelo Git Hub)-(nao aconselhado)
+$ git remote add origin git@github.com:renesantospro/web_apps.git
+$ git branch -M main
++ push
 
 #####  - **Verificar status de conteudos gerenciados**
 (win)no GitBash: $ git status
@@ -44,12 +60,9 @@ no GitBash: $ git clone "_+ https ou ssh da pasta que gostaria de clonar_"
 (win)no GitBash: $ git commit -m "(_Inserir comentario sobre versao_)"
 (Ubuntu)no terminal: $ git commit -m "(_Inserir comentario sobre versao_)"
 
-##### - **Cria origem no ambiente local para push**
-(Ubuntu)no terminal: $ git remote add origin https://github.com/renesantospro/machine_learn.git (exemplo de pasta)
-
 ##### - **Sincronizar ambiente local com remoto**
 (win)no GitBash: $ git push origin main
-(Ubuntu)no terminal: $ git push origin main
+(Ubuntu)no terminal: $ git push -u origin main
 
 ##### - **Sincronizar ambiente remoto com local**
 (win)no GitBash: $ git pull origin main
