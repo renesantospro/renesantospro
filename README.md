@@ -18,6 +18,10 @@
   <img alt="R" align="center" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg">
   <img alt="Markdown" align="center" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg">
   <br>
+
+  <br>
+  <img alt="Airflow" align="center" height="40" width="40" src="https://github.com/apache/airflow/blob/main/airflow/www/static/pin_40.png">
+  <br>
   
   <br>
   <img alt="DeltaLake" align="center" height="40" width="40" src="https://hackolade.com/img/deltalake-logo.png">
